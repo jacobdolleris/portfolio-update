@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: helvetica, arial, sans-serif;
+    background: white;
+}
+
+/* Grid */
+.container{
+     
+    display: grid;
+   
+     grid-template-areas: 
+    "navi      navi     navi     navi"
+    "content  content  content   content"
+    "content2  content2 content2  content2"     
+    "footer   footer   footer    footer"
+    
+         
+}
+.content {
+    grid-area: content;   
+}
+
+/* Menu */
+.menu{
+    display: flex;
+    grid-area: navi;
+    text-align: center;
+    font-size: 25px;
+    height: 50px;
+    padding: 10px;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: darkgray;
+    position: sticky;
+    top: 0;
+   
+
+   
+  
+    
+    
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    margin: 70px;
+    
+    
+}
+.menu a:hover{
+    color:white;
+    
+}
+
+
+
+/* Billeder og text*/
+.projektbilleder{
+    grid-area: content;
+    display: flex;
+    height: 100%;
+    margin-bottom: 40px;
+    width: 100%;
+    justify-content: center;
+
+
+   
+    
+    
+    
+}
+.projektbilleder img{
+    
+    
+    margin-top: 30px;
+    width: 250px;
+    display: flex;
+    margin: 30px 60px 30px 60px;
+   
+   
+    
+    
+}
+.projekttext{
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 19px;
+    line-height: 25px;
+    padding: 10px;
+    margin-bottom: 50px;
+    
+}
+.projekttext h1{
+    margin-bottom: 20px;
+}
+
+/* Kontakt*/
+.kontaktbilleder{
+    grid-area: footer;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+.kontaktbilleder img{
+    width: 100px;
+    justify-content: center;
+    margin:50px;
+    
+    
+}
+.kontakt {
+  justify-content: center;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    
+}
+.infotext{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.infotext img{
+    width: 180px;
+}
+.kontakt p{
+    font-size: 20px;
+}
+.kontakttext{
+    display: flex;
+    justify-content: center;
+}
+.liste{
+    margin-left: 80px;
+    font-size: 20px;
+}
+

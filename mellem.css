@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: helvetica, arial, sans-serif;
+    background: rgba(187, 216, 216, 0.64);
+}
+
+/* Grid */
+.container{
+     
+    display: grid;
+   
+     grid-template-areas: 
+    "navi      navi     navi     navi"
+    "content  content  content   content"
+    "content2  content2 content2  content2"     
+    "footer   footer   footer    footer"
+    
+         
+}
+.content {
+    grid-area: content;
+     
+    
+}
+
+
+/* Menu */
+.menu{
+    display: flex;
+    grid-area: navi;
+    text-align: center;
+    font-size: 22px;
+    height: 50px;
+    padding: 10px;
+    justify-content: center;
+    border: 1px solid black;
+    
+   
+  
+    
+    
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    margin: 40px;
+    
+}
+.menu a:hover{
+    color:rgba(0, 30, 128, 0.39);
+    
+    
+}
+
+
+/*Billeder og text*/
+.projektbilleder{
+    grid-area: content;
+    display: flex;
+    height: 100%;
+    margin-bottom: 40px;
+    width: 100%;
+    justify-content: center;
+
+   
+    
+    
+    
+}
+.projektbilleder img{
+    
+    margin-right: 30px;
+    margin-top: 30px;
+    width: 200px;
+    display: flex;
+   
+    
+    
+}
+.projekttext{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 17px;
+    line-height: 25px;
+    padding: 10px;
+    
+}
+.projekttext h1{
+    margin-bottom: 20px;
+}
+
+
+/* Kontakt */
+.kontaktbilleder{
+    grid-area: footer;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+.kontaktbilleder img{
+    width: 100px;
+    justify-content: center;
+    margin:50px;
+    
+    
+}
+.kontakttext{
+    margin-bottom: 20px;
+}
+.kontakt {
+    width: 400px;
+}
+.liste{
+    margin-left: 80px;
+    font-size: 20px;
+}
+
